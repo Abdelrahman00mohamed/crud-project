@@ -1,0 +1,8 @@
+body
+{
+    font-family: 'segoe ui light';
+    background-color:darkslategray;
+}
+label,th,td{
+    color: white !important;
+}
