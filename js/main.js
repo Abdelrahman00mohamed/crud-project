@@ -4,7 +4,7 @@ var productPriceInput = document.getElementById('productPriceInput');
 var productCategoryInput = document.getElementById('productCategoryInput');
 var productDescInput = document.getElementById('productDescInput');
 let btnadd=document.querySelector(".btn-info")
-let btnupdate=document.querySelector(".btn-primary")
+let btnupdate=document.querySelector(".d-none")
 var productsContainer;
 if(localStorage.getItem("myproducts")!=null){
     productsContainer=JSON.parse(localStorage.getItem("myproducts"))
@@ -82,6 +82,8 @@ btnadd.classList.toggle("d-none")
 btnupdate.classList.toggle("d-none")
 indexupdated=ubdated;
 }
+
+
 function updatebtn(){
     productsContainer[indexupdated].name=productNameInput.value
     productsContainer[indexupdated].price=productPriceInput.value
